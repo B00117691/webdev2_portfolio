@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Contact Page</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>	
+	
+<div class="sidenav">
+	
+	 <a class="navbar-img">
+    	<img src="images/navbarimg.jpg" width="170" height="150" alt="">
+  	</a>
+	
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="media.html">Media</a>
+  <button class="dropdown-btn">Photography 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="nature.html">Nature</a>
+    <a href="travel.html">Travel</a>
+    <a href="other.html">Other</a>
+  </div>
+</div>
+	
+<div id="container">
+<div class="image3"></div>
+<div class="linesleft">
+<div id="a"></div>
+<div id="b"></div>
+</div>
+<div class="linesright">
+<div id="x"></div>
+<div id="y"></div>
+</div>
+
+<div class="biotitle">contact me.</div>
+		
+	<div class="container2">
+  <div class="row">
+    <div class="column">
+    </div>
+    <div class="column">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+		
+        <label for="lname">Surname</label>
+		<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		
+		<label for="fname">Date of Appointment</label>
+        <input type="text" id="fname" name="date" placeholder="Day/month/year..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="europe">Europe</option>
+          <option value="usa">America</option>
+          <option value="asia">Asia</option>
+		  <option value="other">Other</option>
+        </select>
+		
+  <input type="radio" name="gender" value="video" checked> Video<br>
+  <input type="radio" name="gender" value="photo"> Photography <br><br>
+		
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="Please write your message here.." style="height:150px"></textarea>
+		
+		<p> NOTE: Please fill out the form above to schedule an appointment for a photography and/or video shoot. For any enquiries please
+email me at: IngridaJure11@gmail.com. Any appointments made through email instead of contact form on this page will not be accepted.
+</p>
+		
+        <input type="submit" value="Submit">
+		
+		
+    </div>
+  </div>
+</div>
+		
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+	
+<div class="footer">
+  <p>© Copyright 2019</p>
+</div>
+
+</div>
+</body>
+</html>

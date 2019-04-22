@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Photography page</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>	
+	
+<div class="sidenav">
+	
+	 <a class="navbar-img">
+    	<img src="images/navbarimg.jpg" width="170" height="150" alt="">
+  	</a>
+	
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="media.html">Media</a>
+  <button class="dropdown-btn">Photography <em class="fa fa-caret-down"></em></button>
+  <div class="dropdown-container">
+    <a href="nature.html">Nature</a>
+    <a href="travel.html">Travel</a>
+    <a href="other.html">Other</a>
+  </div>
+</div>
+	
+<div id="container">
+	
+	<h1>MEDIA</h1>
+	<h2>Photography</h2>
+	
+<div class="black_box">
+	
+<div class="row2"> 
+  <div class="column2">
+    <img src="images/london_2.JPG" alt="" style="width:100%">
+    <img src="images/london_3.JPG" alt="" style="width:100%">
+    <img src="images/london_5.JPG" alt="" style="width:100%">
+	<img src="images/london_6.JPG" alt="" style="width:100%">
+  </div>
+  <div class="column2">
+    <img src="images/malta_1.JPG" alt="" style="width:100%">
+    <img src="images/malta_2.JPG" alt="" style="width:100%">
+    <img src="images/malta_3.JPG" alt="" style="width:100%">
+    <img src="images/malta_4.JPG" alt="" style="width:100%">
+  </div>  
+  <div class="column2">
+    <img src="images/kerry_1.JPG" alt="" style="width:100%">
+    <img src="images/kerry_2.JPG" alt="" style="width:100%">
+    <img src="images/kerry_3.JPG" alt="" style="width:100%">
+	<img src="images/paris_1.jpg" alt="" style="width:100%">
+  </div>
+</div>
+
+<div id="bottomline"></div>
+	
+</div>
+	
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+	
+<div class="footer">
+  <p>© Copyright 2019</p>
+</div>
+
+</div>
+</body>
+</html>

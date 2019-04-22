@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About Page</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>	
+
+<div class="sidenav">
+	
+	 <a class="navbar-img">
+    	<img src="images/navbarimg.jpg" width="170" height="150" alt="">
+  	</a>
+	
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="media.html">Media</a>
+  <button class="dropdown-btn">Photography 
+    <i class="fa fa-caret-down"></i>
+  	</button>
+  <div class="dropdown-container">
+    <a href="nature.html">Nature</a>
+    <a href="travel.html">Travel</a>
+    <a href="other.html">Other</a>
+  </div>
+</div>
+	
+<div id="container">
+<div class="image"></div>
+<div class="linesleft">
+<div id="a"></div>
+<div id="b"></div>
+</div>
+<div class="linesright">
+<div id="x"></div>
+<div id="y"></div>
+</div>
+
+<div id="line"></div>
+
+<div class="biotitle">about.</div>
+<div class="bio">
+I began to love photography at a very young age. Upon receiving my first Canon camera several years back I fell in love with the craft. It is sometime that I have loved for many years, it was a hobby that stayed with me since the day I got my camera – unlike swimming and tennis which my interest in faded rather quickly. After continuing to capture beautiful moments in life I realized it was something I would like to do for the rest of my life. It was something I wanted to continue to learn and pursuit. I have now begun my first year in college at TU Dublin – Blanchardstown, choosing a course in Creative Digital Media (CDM).
+<br><br>
+I entered this course in hopes of obtaining a degree that will help me make my photography career possible, I hope to learn more about photography itself. I like to photograph mostly portraits and nature. However, close up photography is sometime I am also passionate about. I like to show the true beauty behind each photograph. I like to show a story behind each photograph, show how unique each are and how no two are alike.
+</div>
+
+<div class="secondtitle">OTHER</div>
+<div class="second"><p><strong>AGE</strong><br>
+19 years old. </p>
+<p><b>HOMETOWN</b><br>
+Cavan.</p>
+<p><b>COLLEGE</b><br>
+TU Dublin - Blanch.</p>
+<p><b>COURSE</b><br>
+Creative Digital Media.</p>
+<p><b>YEAR</b><br>
+1st year.</p>
+</div>
+
+<div id="bottomline"></div>
+	
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+	
+<div class="footer">
+  <p>© Copyright 2019</p>
+</div>
+
+</div>
+</body>
+</html>
