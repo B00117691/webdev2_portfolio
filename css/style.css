@@ -1,0 +1,435 @@
+@charset "UTF-8";
+/* CSS Document */
+ 
+body {
+    font-family:roboto;
+    font-size:14px;
+    background:#BDBBB6;
+    background-size:cover;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  background-image: url("https://i.postimg.cc/mrJWSg2d/homepage.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cont {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.centered {
+  position: fixed;
+  top: 230px;
+  left: 75%;
+  font-size: 60px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif" ;
+  transform: translate(-50%, -0%)
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.active {
+  background-color: #96C0B7;
+  text-decoration: underline;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+#container {
+    width:440px;
+    height:550px;
+    background: #F9F5FF;
+    position:absolute;
+    top:0;
+    left:205px;
+    bottom:0;
+    right:0;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.image {
+    width:140px;
+    height:140px;
+    border-radius:140px;
+    overflow:hidden;
+    background:url('https://i.postimg.cc/KvLkP69D/aboutpage.jpg');
+    background-size:140px;
+    position:absolute;
+    top:5px;
+    left:150px;
+    margin-bottom:20px;
+}
+
+.image2 {
+    width:140px;
+    height:140px;
+    border-radius:140px;
+    overflow:hidden;
+    background:url('https://');
+    background-size:140px;
+    position:absolute;
+    top:5px;
+    left:150px;
+    margin-bottom:20px;
+}
+
+.image3 {
+    width:140px;
+    height:140px;
+    border-radius:140px;
+    overflow:hidden;
+    background:url('https://i.postimg.cc/xj3TPPcK/contactimg.jpg');
+    background-size:140px;
+    position:absolute;
+    top:5px;
+    left:150px;
+    margin-bottom:20px;
+}
+
+.linesleft {
+    width:120px;
+    height:140px;
+    padding-left:20px;
+    padding-right:10px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    font-family:roboto;
+    font-size:12px;
+    text-align:right;
+    text-transform:uppercase;
+}
+
+.linesleft #a {
+    position:absolute;
+    top:-10px;
+    left:20px;
+    padding-top:30px;
+    height:30px;
+    width:120px;
+    padding-bottom:15px;
+    border-bottom:1px #cacaca solid;
+}
+
+.linesleft #b {
+    position:absolute;
+    top:50px;
+    left:20px;
+    padding-top:30px;
+    height:30px;
+    width:120px;
+    padding-bottom:15px;
+    border-bottom:1px #cacaca solid;
+}
+
+
+.linesright {
+    width:120px;
+    height:140px;
+    padding-left:20px;
+    padding-right:10px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    font-family:roboto;
+    font-size:12px;
+    text-align:left;
+    text-transform:uppercase;
+}
+
+.linesright #x{
+    position:absolute;
+    top:-10px;
+    left:10px;
+    padding-top:30px;
+    height:30px;
+    width:120px;
+    padding-bottom:15px;
+    border-bottom:1px #cacaca solid;
+}
+
+.linesright #y{
+    position:absolute;
+    top:50px;
+    left:10px;
+    padding-top:30px;
+    height:30px;
+    width:120px;
+    padding-bottom:15px;
+    border-bottom:1px #cacaca solid;
+}
+
+.bio{
+    width:230px;
+    height:320px;
+    position:absolute;
+    top:180px;
+    left:20px;
+    padding:5px;
+    overflow:scroll;
+    font-family:roboto;
+    font-size:12px;
+    text-align:justify;
+    margin-bottom:20px;
+}
+
+.biotitle{
+    width:220px;
+    height:20px;
+    font-family:roboto;
+    text-transform:uppercase;
+    font-size:20px;
+    letter-spacing:2px;
+    position:absolute;
+    top:155px;
+    left:25px;
+    font-weight:600;
+    color:#96C0B7;
+}
+
+#line{
+    width:1px;
+    height:265px;
+    position:absolute;
+    top:185px;
+    left:272px;
+    background:#cacaca;
+}
+.secondtitle{
+    font-family:roboto;
+    text-transform:uppercase;
+    font-size:20px;
+    letter-spacing:2px;
+    font-weight:600;
+    color:#96C0B7;
+    position:absolute;
+    top:155px;
+    left:285px;
+    width:160px;
+    height:20px;
+}
+
+.second {
+    width:160px;
+    height:230px;
+    position:absolute;
+    top:180px;
+    left:290px;
+    font-family:roboto;
+    font-size:12px;
+    overflow:hidden;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.second p{
+    margin-top:5px;
+    margin-bottom:5px;
+	text-align: left;
+}
+
+#bottomline{
+    position:absolute;
+    top:450px;
+    left:20px;
+	right: 10px;
+    padding-top:30px;
+    height:30px;
+    width:410px;
+    padding-bottom:15px;
+    border-bottom:1px #cacaca solid;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 15px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #7A7D7D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #96C0B7;
+}
+
+.container2 {
+  border-radius: 5px;
+  background-color: #f9f5ff;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 80%;
+  margin-top: 65px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+P {
+	text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+h1 {
+	font-family: Helvetica, sans-serif;
+	font-size: 2em;
+    margin-top: 0.150em;
+    margin-bottom: 0em;
+    margin-left: 6.5em;
+    margin-right: 0;
+	font-weight: 100;
+	letter-spacing: 3px;
+}
+
+h2 {
+  font-family: Snell Roundhand, cursive;
+  font-size: 2em;
+  margin-top: 0.150em;
+  margin-bottom: 0em;
+  margin-left: 5.5em;
+  margin-right: 0;
+  font-weight: 200;
+}
+
+.black_box {
+	position: absolute;
+    border: 3px solid #000000;
+    left: 10px;
+    right: 10px;
+    top: 90px;
+    bottom: 50px;
+	overflow: scroll;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row2 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column2 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 45%;
+  padding: 0 4px;
+}
+
+.column2 img {
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #96C0B7;
+   color: white;
+   text-align: center;
+}
